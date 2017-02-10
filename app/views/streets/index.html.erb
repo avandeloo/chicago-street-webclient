@@ -1,0 +1,8 @@
+<h1>Chicago Streets</h1>
+
+<% @streets.each do |street| %>
+  <h2><%= street["full_street_name"] %></h2>
+  <h3>Max Adress: <%= street["max_address"]%></h3>
+  <h3>Min Address: <%= street["min_address"]%></h3>
+  <h3>Direction: <%= street["direction"]%></h3>
+<% end %>
